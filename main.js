@@ -24,7 +24,7 @@ try {
   let error = "Unknown Error"
 
   if (typeof e.code != 'undefined' && e.code == 'MODULE_NOT_FOUND') {
-    error = "'config.js' not found. \nPlease ensure that you have created 'config.js' " +
+    error = "'config.json' not found. \nPlease ensure that you have created 'config.json' " +
       "in the root of your smart-mirror directory."
   } else if (typeof e.message != 'undefined') {
     console.log(e)
