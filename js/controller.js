@@ -577,8 +577,10 @@
     angular.module('SmartMirror')
         .controller('MirrorCtrl', MirrorCtrl);
 
-    function themeController($scope) {
+    function themeController($scope, $sce) {
         $scope.layoutName = (typeof config.layout !== 'undefined' && config.layout) ? config.layout : 'main';
+        var faUrl = 'https://use.fontawesome.com/' + config.fontAwesomeId + '.js';
+        $scope.fontAwesome = $sce.trustAsResourceUrl(faUrl);
     }
 
     angular.module('SmartMirror')
