@@ -13,6 +13,7 @@ var config = {
         continuous: false // After a keyword is detected keep listening until speech is not heard
     },
     layout: "main",
+    fontAwesomeId: "",
     greeting: ["Hi, sexy!", "Greetings, commander"], // An array of greetings to randomly choose from
 
     // Alternativly you can have greetings that appear based on the time of day
